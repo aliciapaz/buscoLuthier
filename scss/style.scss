@@ -1,12 +1,23 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/_reboot";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 /* global */
 
-$bg-dark: #d4574a;
+$red-color: #d4574a;
+$white: #fdf7f7;
+$poppins: 'Poppins', sans-serif;
 
+$theme-colors: (
+  "dark": $red-color
+);
+
+/* navbar */
+
+.navbar .navbar-brand {
+    font-family: $poppins;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
