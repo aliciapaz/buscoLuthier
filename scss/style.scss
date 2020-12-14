@@ -11,7 +11,7 @@ $poppins: "Poppins", sans-serif;
 
 $theme-colors: (
   "dark": $red-color,
-  "light":  #cdd1d9
+  "light": #cdd1d9,
 );
 
 /* navbar */
@@ -28,31 +28,36 @@ $theme-colors: (
   background-position: 50% 50%;
   width: 100%;
   @media only screen and (max-width: 768px) {
-    height: 38rem;
-  }
-  @media only screen and (max-width: 1024px) {
-    height: 50rem;
+    height: 60rem;
   }
   @media only screen and (min-width: 1024px) {
-    height: 50rem;
+    height: 35rem;
   }
 }
 
 .wrapper-img .sl-title {
-    color: #fff;
-    font-weight: 900;
-    padding-top: 10rem;
+  color: #fff;
+  font-weight: 900;
+  padding-top: 10rem;
 }
 
 .wrapper-img .search-form {
   background-color: hsla(0, 100%, 100%, 0.8);
   color: #fff;
+  @media only screen and (min-width: 768px) {
+    width: 60%;
+  }
 }
 
 .wrapper-img .search-title {
-    color: $gray-600;
-    font-size: 1rem;
-    
+  color: $gray-600;
+  font-size: 1rem;
+}
+
+/* 4 simple steps */
+
+.steps-title {
+    color:$red-color;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

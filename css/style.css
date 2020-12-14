@@ -434,17 +434,12 @@ progress {
 }
 @media only screen and (max-width: 768px) {
   .wrapper-img {
-    height: 38rem;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .wrapper-img {
-    height: 50rem;
+    height: 60rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .wrapper-img {
-    height: 50rem;
+    height: 35rem;
   }
 }
 
@@ -458,10 +453,20 @@ progress {
   background-color: rgba(255, 255, 255, 0.8);
   color: #fff;
 }
+@media only screen and (min-width: 768px) {
+  .wrapper-img .search-form {
+    width: 60%;
+  }
+}
 
 .wrapper-img .search-title {
   color: #6c757d;
   font-size: 1rem;
+}
+
+/* 4 simple steps */
+.steps-title {
+  color: #d4574a;
 }
 
 /*!
