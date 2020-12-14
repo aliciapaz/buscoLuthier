@@ -1,23 +1,58 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/_reboot";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/_mixins.scss";
+@import "../node_modules/bootstrap/scss/_reboot.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 /* global */
 
 $red-color: #d4574a;
-$white: #fdf7f7;
-$poppins: 'Poppins', sans-serif;
+$poppins: "Poppins", sans-serif;
 
 $theme-colors: (
-  "dark": $red-color
+  "dark": $red-color,
+  "light":  #cdd1d9
 );
 
 /* navbar */
 
 .navbar .navbar-brand {
-    font-family: $poppins;
+  font-family: $poppins;
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+/* main search */
+
+.wrapper-img {
+  background-image: url(/img/violin-bkg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    height: 38rem;
+  }
+  @media only screen and (max-width: 1024px) {
+    height: 50rem;
+  }
+  @media only screen and (min-width: 1024px) {
+    height: 50rem;
+  }
+}
+
+.wrapper-img .sl-title {
+    color: #fff;
+    font-weight: 900;
+    padding-top: 10rem;
+}
+
+.wrapper-img .search-form {
+  background-color: hsla(0, 100%, 100%, 0.8);
+  color: #fff;
+}
+
+.wrapper-img .search-title {
+    color: $gray-600;
+    font-size: 1rem;
+    
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

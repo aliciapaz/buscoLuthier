@@ -425,6 +425,45 @@ progress {
   font-family: "Poppins", sans-serif;
 }
 
+/* main search */
+.wrapper-img {
+  background-image: url(/img/violin-bkg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper-img {
+    height: 38rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper-img {
+    height: 50rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .wrapper-img {
+    height: 50rem;
+  }
+}
+
+.wrapper-img .sl-title {
+  color: #fff;
+  font-weight: 900;
+  padding-top: 10rem;
+}
+
+.wrapper-img .search-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+}
+
+.wrapper-img .search-title {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -446,6 +485,7 @@ progress {
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-dark: #d4574a;
+  --bs-light: #cdd1d9;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3310,6 +3350,36 @@ textarea.form-control-lg {
   border-color: #d4574a;
 }
 
+.btn-light {
+  color: #000;
+  background-color: #cdd1d9;
+  border-color: #cdd1d9;
+}
+.btn-light:hover {
+  color: #000;
+  background-color: #d5d8df;
+  border-color: #d2d6dd;
+}
+.btn-check:focus + .btn-light, .btn-light:focus {
+  color: #000;
+  background-color: #d5d8df;
+  border-color: #d2d6dd;
+  box-shadow: 0 0 0 0.25rem rgba(174, 178, 184, 0.5);
+}
+.btn-check:checked + .btn-light, .btn-check:active + .btn-light, .btn-light:active, .btn-light.active, .show > .btn-light.dropdown-toggle {
+  color: #000;
+  background-color: #d7dae1;
+  border-color: #d2d6dd;
+}
+.btn-check:checked + .btn-light:focus, .btn-check:active + .btn-light:focus, .btn-light:active:focus, .btn-light.active:focus, .show > .btn-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(174, 178, 184, 0.5);
+}
+.btn-light:disabled, .btn-light.disabled {
+  color: #000;
+  background-color: #cdd1d9;
+  border-color: #cdd1d9;
+}
+
 .btn-outline-dark {
   color: #d4574a;
   border-color: #d4574a;
@@ -3332,6 +3402,31 @@ textarea.form-control-lg {
 }
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #d4574a;
+  background-color: transparent;
+}
+
+.btn-outline-light {
+  color: #cdd1d9;
+  border-color: #cdd1d9;
+}
+.btn-outline-light:hover {
+  color: #000;
+  background-color: #cdd1d9;
+  border-color: #cdd1d9;
+}
+.btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
+  box-shadow: 0 0 0 0.25rem rgba(205, 209, 217, 0.5);
+}
+.btn-check:checked + .btn-outline-light, .btn-check:active + .btn-outline-light, .btn-outline-light:active, .btn-outline-light.active, .btn-outline-light.dropdown-toggle.show {
+  color: #000;
+  background-color: #cdd1d9;
+  border-color: #cdd1d9;
+}
+.btn-check:checked + .btn-outline-light:focus, .btn-check:active + .btn-outline-light:focus, .btn-outline-light:active:focus, .btn-outline-light.active:focus, .btn-outline-light.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(205, 209, 217, 0.5);
+}
+.btn-outline-light:disabled, .btn-outline-light.disabled {
+  color: #cdd1d9;
   background-color: transparent;
 }
 
@@ -4565,6 +4660,15 @@ textarea.form-control-lg {
   color: #662a23;
 }
 
+.alert-light {
+  color: #525457;
+  background-color: #f5f6f7;
+  border-color: #f0f1f4;
+}
+.alert-light .alert-link {
+  color: #424346;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -4597,7 +4701,7 @@ textarea.form-control-lg {
 }
 
 .progress-bar-striped {
-  background-image: linear-gradient(45deg, rgba(253, 247, 247, 0.15) 25%, transparent 25%, transparent 50%, rgba(253, 247, 247, 0.15) 50%, rgba(253, 247, 247, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
 }
 
@@ -4831,9 +4935,23 @@ textarea.form-control-lg {
   background-color: #ddc7c5;
 }
 .list-group-item-dark.list-group-item-action.active {
-  color: #fdf7f7;
+  color: #fff;
   background-color: #7f342c;
   border-color: #7f342c;
+}
+
+.list-group-item-light {
+  color: #525457;
+  background-color: #f5f6f7;
+}
+.list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
+  color: #525457;
+  background-color: #ddddde;
+}
+.list-group-item-light.list-group-item-action.active {
+  color: #fff;
+  background-color: #525457;
+  border-color: #525457;
 }
 
 .btn-close {
@@ -5722,6 +5840,13 @@ textarea.form-control-lg {
   color: #dd796e;
 }
 
+.link-light {
+  color: #cdd1d9;
+}
+.link-light:hover, .link-light:focus {
+  color: #d7dae1;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -6073,8 +6198,12 @@ textarea.form-control-lg {
   border-color: #d4574a !important;
 }
 
+.border-light {
+  border-color: #cdd1d9 !important;
+}
+
 .border-white {
-  border-color: #fdf7f7 !important;
+  border-color: #fff !important;
 }
 
 .border-0 {
@@ -6831,8 +6960,12 @@ textarea.form-control-lg {
   color: #d4574a !important;
 }
 
+.text-light {
+  color: #cdd1d9 !important;
+}
+
 .text-white {
-  color: #fdf7f7 !important;
+  color: #fff !important;
 }
 
 .text-body {
@@ -6848,7 +6981,7 @@ textarea.form-control-lg {
 }
 
 .text-white-50 {
-  color: rgba(253, 247, 247, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .text-reset {
@@ -6875,12 +7008,16 @@ textarea.form-control-lg {
   background-color: #d4574a !important;
 }
 
+.bg-light {
+  background-color: #cdd1d9 !important;
+}
+
 .bg-body {
   background-color: #fff !important;
 }
 
 .bg-white {
-  background-color: #fdf7f7 !important;
+  background-color: #fff !important;
 }
 
 .bg-transparent {
