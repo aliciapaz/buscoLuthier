@@ -2,7 +2,7 @@
 @import "../node_modules/bootstrap/scss/_variables.scss";
 @import "../node_modules/bootstrap/scss/_mixins.scss";
 @import "../node_modules/bootstrap/scss/_reboot.scss";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
 
 /* global */
 
@@ -18,6 +18,7 @@ $theme-colors: (
 
 .navbar .navbar-brand {
   font-family: $poppins;
+  font-weight: 600;
 }
 
 /* main search */
@@ -56,8 +57,74 @@ $theme-colors: (
 
 /* 4 simple steps */
 
+.steps-container {
+    font-family: $poppins;
+}
+
 .steps-title {
     color:$red-color;
+}
+
+/* bottom section */
+
+.bottom-section {
+  font-family: $poppins;
+  color:#fff;
+  font-weight: 600;
+}
+
+.item-find {
+  background-color: #e17e65;
+}
+
+.bottom-btn {
+  padding: .5rem;
+  background-color: #fafdff;
+  font-weight: 900;
+}
+
+.btn-find {
+  color: #e17e65;
+}
+
+.btn-near {
+  color: #98a4a5;
+}
+
+.item-need {
+  background-color: #98a4a5;
+}
+
+.item-anytime {
+  background-color: #509bd7;
+}
+
+/* footer */ 
+/*bottom nav bar*/
+
+.bottom-wrapper {
+  background-color: #000;
+  padding: 2rem 0;
+}
+
+.bottom-navbar .bottom-links {
+  list-style: none;
+  padding: 0 .3rem;
+  margin:0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.bottom-links .bottom-link {
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: .8rem;
+  @media only screen and (max-width: 1024px) {
+    padding: .3rem .2rem;
+  }
+  @media only screen and (min-width: 1024px) {
+    padding: .3rem 3rem;
+  }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
