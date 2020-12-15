@@ -6,6 +6,12 @@
 
 /* global */
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 $red-color: #d4574a;
 $poppins: "Poppins", sans-serif;
 
@@ -28,12 +34,7 @@ $theme-colors: (
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  @media only screen and (max-width: 768px) {
-    height: 60rem;
-  }
-  @media only screen and (min-width: 1024px) {
-    height: 35rem;
-  }
+  height: 38rem;
 }
 
 .wrapper-img .sl-title {
@@ -99,7 +100,6 @@ $theme-colors: (
   background-color: #509bd7;
 }
 
-/* footer */ 
 /*bottom nav bar*/
 
 .bottom-wrapper {
@@ -109,9 +109,7 @@ $theme-colors: (
 }
 
 .bottom-navbar .bottom-links {
-  list-style: none;
   padding: 0 .3rem;
-  margin:0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   max-width: 95%;
@@ -128,7 +126,16 @@ $theme-colors: (
   }
 }
 
-/* subscribe */ 
+.center-icon {
+  background-color: #000;
+  border: 2px solid #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  bottom: 0;
+
+}
+
+/* subscribe section */ 
 .subscribe-container {
   max-width: 80%;
   font-size: .8rem;
@@ -154,5 +161,17 @@ $theme-colors: (
   color: $red-color;
 }
 
+/* footer */
+
+.footer {
+  background-color: #1f1f1f;
+  padding: 1rem;
+}
+
+.legal-span {
+  font-family: $poppins;
+  font-size: .7rem;
+  color: #fff;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

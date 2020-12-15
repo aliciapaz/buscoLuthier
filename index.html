@@ -166,12 +166,13 @@
     </div>
 
     <!-- footer -->
+
     <div class="bottom-wrapper">
-      <nav class="bottom-navbar d-none d-md-block mb-5">
+      <nav class="bottom-navbar d-none d-md-block mb-5 position-relative">
         <div
           class="container-fluid d-flex align-items-center justify-content-center"
         >
-          <ul class="bottom-links d-flex">
+          <ul class="bottom-links d-flex pe-5">
             <li class="bottom-link">
               <a href="#" class="link-light text-decoration-none">HOME</a>
             </li>
@@ -185,14 +186,7 @@
               <a href="#" class="link-light text-decoration-none">ADVERTISE</a>
             </li>
           </ul>
-          <div class="center-icon">
-            <a
-              class="link-light rounded-circle border border-light p-3"
-              href="#"
-              ><i class="fas fa-guitar"></i
-            ></a>
-          </div>
-          <ul class="bottom-links d-flex">
+          <ul class="bottom-links d-flex ps-5">
             <li class="bottom-link">
               <a href="#" class="link-light text-decoration-none">FACEBOOK</a>
             </li>
@@ -206,6 +200,9 @@
               <a href="#" class="link-light text-decoration-none">INSTAGRAM</a>
             </li>
           </ul>
+          <div class="center-icon position-absolute">
+            <a class="link-light" href="#"><i class="fas fa-guitar fs-4"></i></a>
+          </div>
         </div>
       </nav>
       <div class="subscribe-container container-fluid mt-3">
@@ -244,9 +241,8 @@
               >
             </h5>
             <p class="text-center">
-              Have a question or suggestion? <a
-                href="#"
-                class="subs-link text-decoration-none"
+              Have a question or suggestion?
+              <a href="#" class="subs-link text-decoration-none"
                 >buscoluthier@gmail.com</a
               >
             </p>
@@ -261,13 +257,38 @@
               Busco luthier is an online platform that allows musicians from
               Santiago, Chile to find luthiers nearby in the city, simply by
               searching by commune, instrument or luthier name.
-              <a class="subs-link text-decoration-none" href="#">Learn more...</a>
+              <a class="subs-link text-decoration-none" href="#"
+                >Learn more...</a
+              >
             </p>
           </div>
         </div>
       </div>
     </div>
-
+    <footer class="footer d-flex flex-column flex-md-row justify-content-between">
+      <ul class="social-links d-flex mx-auto mx-md-1">
+        <li>
+          <a href="#" class="link-light"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"><i class="px-2 fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"><i class="px-2 fas fa-rss"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"
+            ><i class="px-2 fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="mx-auto mx-md-1">
+        <span class="flex legal-span"><i class="fab fa-creative-commons"></i> 2020 Busco Luthier.</span>
+        <span class="flex legal-span">Made with &lt;3 in Santiago.</span>
+      </div>
+    </footer>
     <script
       src="https://kit.fontawesome.com/bffcdc15fc.js"
       crossorigin="anonymous"
