@@ -130,15 +130,24 @@ $theme-colors: (
 
 /* subscribe */ 
 .subscribe-container {
-  max-width: 95%;
+  max-width: 80%;
   font-size: .8rem;
   color: #fff;
 }
 
-.subscribe-form .subscribe-btn {
-  background-color: #444;
-  color: #fff;
-  height: 25px;
+.subscribe-form {
+  .subscribe-btn {
+    background-color: #444;
+    color: #fff;
+    height: 25px;
+  }
+  .input-email,
+  .subscribe-btn {
+    @media only screen and (max-width: 1024px) {
+      width: 10rem;
+    }
+  }
+
 }
 
 .subs-link {

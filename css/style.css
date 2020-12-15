@@ -541,7 +541,7 @@ progress {
 
 /* subscribe */
 .subscribe-container {
-  max-width: 95%;
+  max-width: 80%;
   font-size: 0.8rem;
   color: #fff;
 }
@@ -550,6 +550,12 @@ progress {
   background-color: #444;
   color: #fff;
   height: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .subscribe-form .input-email,
+.subscribe-form .subscribe-btn {
+    width: 10rem;
+  }
 }
 
 .subs-link {
