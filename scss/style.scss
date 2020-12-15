@@ -46,6 +46,7 @@ $theme-colors: (
 .wrapper-img .search-form {
   background-color: hsla(0, 100%, 100%, 0.8);
   color: #fff;
+
   @media only screen and (min-width: 768px) {
     width: 60%;
   }
@@ -59,18 +60,18 @@ $theme-colors: (
 /* 4 simple steps */
 
 .steps-container {
-    font-family: $poppins;
+  font-family: $poppins;
 }
 
 .steps-title {
-    color:$red-color;
+  color: $red-color;
 }
 
 /* bottom section */
 
 .bottom-section {
   font-family: $poppins;
-  color:#fff;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -79,7 +80,7 @@ $theme-colors: (
 }
 
 .bottom-btn {
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: #fafdff;
   font-weight: 900;
 }
@@ -100,7 +101,7 @@ $theme-colors: (
   background-color: #509bd7;
 }
 
-/*bottom nav bar*/
+/* bottom nav bar */
 
 .bottom-wrapper {
   background-color: #000;
@@ -109,7 +110,7 @@ $theme-colors: (
 }
 
 .bottom-navbar .bottom-links {
-  padding: 0 .3rem;
+  padding: 0 0.3rem;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   max-width: 95%;
@@ -117,12 +118,14 @@ $theme-colors: (
 
 .bottom-links .bottom-link {
   font-weight: 600;
-  font-size: .8rem;
+  font-size: 0.8rem;
+
   @media only screen and (max-width: 1024px) {
-    padding: .3rem .2rem;
+    padding: 0.3rem 0.2rem;
   }
+
   @media only screen and (min-width: 1024px) {
-    padding: .3rem 3rem;
+    padding: 0.3rem 3rem;
   }
 }
 
@@ -132,13 +135,12 @@ $theme-colors: (
   padding: 1rem;
   border-radius: 50%;
   bottom: 0;
-
 }
 
-/* subscribe section */ 
+/* subscribe section */
 .subscribe-container {
   max-width: 80%;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #fff;
 }
 
@@ -148,13 +150,13 @@ $theme-colors: (
     color: #fff;
     height: 25px;
   }
+
   .input-email,
   .subscribe-btn {
     @media only screen and (max-width: 1024px) {
       width: 10rem;
     }
   }
-
 }
 
 .subs-link {
@@ -170,7 +172,7 @@ $theme-colors: (
 
 .legal-span {
   font-family: $poppins;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #fff;
 }
 
