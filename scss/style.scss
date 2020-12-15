@@ -105,6 +105,7 @@ $theme-colors: (
 .bottom-wrapper {
   background-color: #000;
   padding: 2rem 0;
+  font-family: $poppins;
 }
 
 .bottom-navbar .bottom-links {
@@ -113,10 +114,10 @@ $theme-colors: (
   margin:0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  max-width: 95%;
 }
 
 .bottom-links .bottom-link {
-  font-family: $poppins;
   font-weight: 600;
   font-size: .8rem;
   @media only screen and (max-width: 1024px) {
@@ -126,5 +127,23 @@ $theme-colors: (
     padding: .3rem 3rem;
   }
 }
+
+/* subscribe */ 
+.subscribe-container {
+  max-width: 95%;
+  font-size: .8rem;
+  color: #fff;
+}
+
+.subscribe-form .subscribe-btn {
+  background-color: #444;
+  color: #fff;
+  height: 25px;
+}
+
+.subs-link {
+  color: $red-color;
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

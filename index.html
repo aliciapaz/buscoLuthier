@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Luthier's Directory</title>
+    <title>Busco Luthier</title>
   </head>
   <body>
     <!-- Navigation bar -->
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
         <a class="navbar-brand mx-auto ms-md-2" href="#"
-          >luthier<i class="fas fa-guitar"></i>search</a
+          >busco<i class="fas fa-guitar"></i>luthier</a
         >
         <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
           <li class="nav-item d-flex mx-3">
@@ -37,7 +37,7 @@
     <!-- Main search -->
     <div class="container-fluid wrapper-img">
       <h3 class="sl-title text-uppercase text-center">
-        search luthier....your gateway to luthiers in Santiago.
+        busco luthier....your gateway to luthiers in Santiago.
       </h3>
       <div class="search-form d-flex flex-column rounded p-3 mx-auto">
         <h5 class="search-title text-uppercase fw-bold">Search by key word:</h5>
@@ -64,7 +64,7 @@
       class="steps-container container-fluid d-none d-md-block text-center my-2 py-5"
     >
       <div class="steps-title mx-auto mb-5 text-uppercase fw-bold">
-        Luthier search works in four simple steps.
+        busco luthier works in four simple steps.
       </div>
       <div class="row">
         <div class="col-md-10 col-lg-4 mx-auto my-3">
@@ -72,9 +72,9 @@
           <h3 class="text-uppercase fw-bold">1. Search:</h3>
           <p>
             It's simple. On luthier search homepage, enter the name of a luthier
-            you are looking for and click on search. Alternatively, click on the
-            search icon on the top menu to view the list of all luthiers
-            available.
+            you are looking for, an intrument or a commune and click on search.
+            Alternatively, click on the search icon on the top menu to view the
+            list of all luthiers available.
           </p>
         </div>
         <div class="col-md-10 col-lg-4 mx-auto my-3">
@@ -82,8 +82,8 @@
           <h3 class="text-uppercase fw-bold">2. Locate:</h3>
           <p>
             Get to see where the luthier's workshop is located by clicking on
-            the luthier profile. You can get the directions from anywhere in the
-            city.
+            the luthier's profile. You can get the directions from anywhere in
+            the city.
           </p>
         </div>
       </div>
@@ -167,8 +167,10 @@
 
     <!-- footer -->
     <div class="bottom-wrapper">
-      <nav class="bottom-navbar d-none d-md-block">
-        <div class="container-fluid d-flex align-items-center justify-content-center">
+      <nav class="bottom-navbar d-none d-md-block mb-5">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-center"
+        >
           <ul class="bottom-links d-flex">
             <li class="bottom-link">
               <a href="#" class="link-light text-decoration-none">HOME</a>
@@ -206,6 +208,64 @@
           </ul>
         </div>
       </nav>
+      <div class="subscribe-container container-fluid mt-3">
+        <div class="row">
+          <div class="subscribe-form col-12 col-md mb-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >SUBSCRIBE</a
+              >
+            </h5>
+            <div
+              class="d-flex flex-column flex-md-row align-items-center justify-content-center"
+            >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="text-fields rounded border-0 my-1 mx-1 px-2 text-center text-md-start"
+                required
+                maxlength="20"
+                placeholder="Enter an email"
+              />
+              <label for="submit"></label>
+              <input
+                class="subscribe-btn border-0 rounded"
+                type="submit"
+                id="submit"
+                value="Subscribe"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md my-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >CONTACT</a
+              >
+            </h5>
+            <p class="text-center">
+              Have a question or suggestion? <a
+                href="#"
+                class="subs-link text-decoration-none"
+                >buscoluthier@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="col-12 col-md my-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >ABOUT</a
+              >
+            </h5>
+            <p class="text-center">
+              Busco luthier is an online platform that allows musicians from
+              Santiago de Chile to find luthiers nearby in the city, simply by
+              searching by commune, instrument or luthier name.
+              <a class="subs-link text-decoration-none" href="#">Learn more...</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
