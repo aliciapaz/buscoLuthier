@@ -60,7 +60,7 @@ $theme-colors: (
 }
 
 .btn-results:hover {
-  opacity: 80%;
+  opacity: 50%;
 }
 
 .search-btn {
@@ -71,6 +71,18 @@ $theme-colors: (
 .clear-btn {
   border: 1px solid #e5a955;
   background-color: #e5ac5b;
+}
+
+/* search results */ 
+
+.results-title {
+  font-family: $poppins;
+}
+
+.luthier-img {
+  margin: 0 auto;
+  width: 17rem;
+  height: auto;
 }
 
 /* bottom nav bar */
@@ -121,6 +133,12 @@ $theme-colors: (
     background-color: #444;
     color: #fff;
     height: 25px;
+    opacity: 100%;
+    transition: opacity .5s ease;
+  }
+
+  .subscribe-btn:hover {
+    opacity: 80%;
   }
 
   .input-email,

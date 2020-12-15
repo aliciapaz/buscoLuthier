@@ -464,7 +464,7 @@ ul {
 }
 
 .btn-results:hover {
-  opacity: 80%;
+  opacity: 50%;
 }
 
 .search-btn {
@@ -475,6 +475,17 @@ ul {
 .clear-btn {
   border: 1px solid #e5a955;
   background-color: #e5ac5b;
+}
+
+/* search results */
+.results-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.luthier-img {
+  margin: 0 auto;
+  width: 17rem;
+  height: auto;
 }
 
 /* bottom nav bar */
@@ -525,6 +536,11 @@ ul {
   background-color: #444;
   color: #fff;
   height: 25px;
+  opacity: 100%;
+  transition: opacity 0.5s ease;
+}
+.subscribe-form .subscribe-btn:hover {
+  opacity: 80%;
 }
 @media only screen and (max-width: 1024px) {
   .subscribe-form .input-email,

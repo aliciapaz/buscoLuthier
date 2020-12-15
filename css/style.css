@@ -552,6 +552,11 @@ ul {
   background-color: #444;
   color: #fff;
   height: 25px;
+  opacity: 100%;
+  transition: opacity 0.5s ease;
+}
+.subscribe-form .subscribe-btn:hover {
+  opacity: 80%;
 }
 @media only screen and (max-width: 1024px) {
   .subscribe-form .input-email,

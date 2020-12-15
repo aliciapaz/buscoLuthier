@@ -149,6 +149,12 @@ $theme-colors: (
     background-color: #444;
     color: #fff;
     height: 25px;
+    opacity: 100%;
+    transition: opacity .5s ease;
+  }
+
+  .subscribe-btn:hover {
+    opacity: 80%;
   }
 
   .input-email,
