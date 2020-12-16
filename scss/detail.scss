@@ -31,7 +31,8 @@ $theme-colors: (
 
 .carousel-wrapper {
   margin: 3rem auto;
-  box-shadow: 5px 10px 5px #444;
+  box-shadow: 5px 5px 5px 5px #444;
+  max-width: 90%;
 
   @media only screen and (min-width: 768px) {
     max-width: 50%;
@@ -48,6 +49,34 @@ $theme-colors: (
   @media only screen and (max-width: 1024px) {
     height: 14rem;
   }
+}
+
+.luthier-info {
+  @extend .carousel-wrapper;
+
+  font-family: $poppins;
+  padding: 2rem;
+}
+
+.luthier-info-title {
+  color: $red-color;
+  font-weight: 600;
+}
+
+.luthier-info-item {
+  border: 1px solid #cdd1d9;
+  border-radius: 4px;
+  padding-top: 3px;
+}
+
+.info-attribute {
+  font-weight: 600;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.luthier-attribute {
+  color: $primary;
 }
 
 /* bottom nav bar */
