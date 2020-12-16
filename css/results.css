@@ -544,14 +544,14 @@ ul {
   opacity: 100%;
   transition: opacity 0.5s ease;
 }
-.subscribe-form .subscribe-btn:hover {
-  opacity: 80%;
-}
 @media only screen and (max-width: 1024px) {
   .subscribe-form .input-email,
 .subscribe-form .subscribe-btn {
     width: 10rem;
   }
+}
+.subscribe-form .subscribe-btn:hover {
+  opacity: 80%;
 }
 
 .subs-link {

@@ -150,11 +150,7 @@ $theme-colors: (
     color: #fff;
     height: 25px;
     opacity: 100%;
-    transition: opacity .5s ease;
-  }
-
-  .subscribe-btn:hover {
-    opacity: 80%;
+    transition: opacity 0.5s ease;
   }
 
   .input-email,
@@ -162,6 +158,10 @@ $theme-colors: (
     @media only screen and (max-width: 1024px) {
       width: 10rem;
     }
+  }
+
+  .subscribe-btn:hover {
+    opacity: 80%;
   }
 }
 

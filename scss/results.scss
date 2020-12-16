@@ -51,12 +51,12 @@ $theme-colors: (
 
 .btn-results {
   border-radius: 4px;
-  padding: .3rem .8rem;
+  padding: 0.3rem 0.8rem;
   font-family: $poppins;
   color: #fff;
   font-weight: 600;
   opacity: 100%;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .btn-results:hover {
@@ -73,7 +73,7 @@ $theme-colors: (
   background-color: #e5ac5b;
 }
 
-/* search results */ 
+/* search results */
 
 .results-title {
   font-family: $poppins;
@@ -87,8 +87,9 @@ $theme-colors: (
 
 .more-btn {
   @extend .btn-results;
+
   position: absolute;
-  bottom: .5rem;
+  bottom: 0.5rem;
 }
 
 /* bottom nav bar */
@@ -140,11 +141,7 @@ $theme-colors: (
     color: #fff;
     height: 25px;
     opacity: 100%;
-    transition: opacity .5s ease;
-  }
-
-  .subscribe-btn:hover {
-    opacity: 80%;
+    transition: opacity 0.5s ease;
   }
 
   .input-email,
@@ -152,6 +149,10 @@ $theme-colors: (
     @media only screen and (max-width: 1024px) {
       width: 10rem;
     }
+  }
+
+  .subscribe-btn:hover {
+    opacity: 80%;
   }
 }
 
