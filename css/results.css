@@ -453,7 +453,7 @@ ul {
   width: 100% !important;
 }
 
-.btn-results {
+.btn-results, .more-btn {
   border-radius: 4px;
   padding: 0.3rem 0.8rem;
   font-family: "Poppins", sans-serif;
@@ -463,7 +463,7 @@ ul {
   transition: opacity 0.5s ease;
 }
 
-.btn-results:hover {
+.btn-results:hover, .more-btn:hover {
   opacity: 50%;
 }
 
@@ -484,8 +484,13 @@ ul {
 
 .luthier-img {
   margin: 0 auto;
-  width: 17rem;
-  height: auto;
+  width: 100%;
+  height: 15rem;
+}
+
+.more-btn {
+  position: absolute;
+  bottom: 0.5rem;
 }
 
 /* bottom nav bar */

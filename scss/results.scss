@@ -81,8 +81,14 @@ $theme-colors: (
 
 .luthier-img {
   margin: 0 auto;
-  width: 17rem;
-  height: auto;
+  width: 100%;
+  height: 15rem;
+}
+
+.more-btn {
+  @extend .btn-results;
+  position: absolute;
+  bottom: .5rem;
 }
 
 /* bottom nav bar */

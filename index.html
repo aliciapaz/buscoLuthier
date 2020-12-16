@@ -10,13 +10,13 @@
     <!-- Navigation bar -->
     <nav class="navbar navbar-dark bg-dark sticky-top">
       <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
-        <a class="navbar-brand mx-auto ms-md-2" href="#"
+        <a class="navbar-brand mx-auto ms-md-2" href="index.html"
           >busco<i class="fas fa-guitar"></i>luthier</a
         >
         <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
           <li class="nav-item d-flex mx-3">
             <i class="nav-link fas fa-search"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">Luthiers</a>
+            <a class="nav-link d-none d-lg-block px-2" href="results.html">Luthiers</a>
           </li>
           <li class="nav-item d-flex mx-3">
             <i class="nav-link fas fa-user"></i>
@@ -43,12 +43,12 @@
         <h5 class="search-title text-uppercase fw-bold">Search by key word:</h5>
         <form class="d-flex flex-column flex-md-row">
           <input type="text" class="form-control my-1 mx-md-1" id="search" />
-          <button
-            type="submit"
+          <a 
+            href="results.html"
             class="btn btn-dark text-reset text-uppercase my-1 fw-bold"
           >
             Search
-          </button>
+        </a>
         </form>
       </div>
       <div class="text-center">
@@ -114,9 +114,9 @@
         <div class="info mx-5 px-2">
           <h5 class="fw-bold">Over 100 luthiers registered with us</h5>
           <p>Find a luthier by using our filtered search engine</p>
-          <button class="bottom-btn btn-find border-0 rounded">
+          <a href="results.html" class="text-decoration-none bottom-btn btn-find border-0 rounded">
             Find a luthier
-          </button>
+          </a>
         </div>
         <img
           class="rounded-circle mx-5"
@@ -134,9 +134,9 @@
             No need to cross the entire city to find a luthier!
           </h5>
           <p>Just press on the Search button and you're all set.</p>
-          <button class="bottom-btn btn-near border-0 rounded">
+          <a href="results.html" class="text-decoration-none bottom-btn btn-near border-0 rounded">
             Find a luthier near you
-          </button>
+          </a>
         </div>
         <img
           class="rounded-circle mx-5"
@@ -201,7 +201,7 @@
             </li>
           </ul>
           <div class="center-icon position-absolute">
-            <a class="link-light" href="#"><i class="fas fa-guitar fs-4"></i></a>
+            <a class="link-light" href="index.html"><i class="fas fa-guitar fs-4"></i></a>
           </div>
         </div>
       </nav>
