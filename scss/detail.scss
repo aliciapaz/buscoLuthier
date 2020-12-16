@@ -79,20 +79,72 @@ $theme-colors: (
   color: $primary;
 }
 
-/* map directions */ 
+/* map directions */
 
 .directions-title {
-    @extend .luthier-info-title;
-    font-family: $poppins;
-    text-align: center;
+  @extend .luthier-info-title;
+
+  font-family: $poppins;
+  text-align: center;
 }
 
 .directions-map {
-    margin-bottom: 2rem;
-    max-width: 90%;
+  margin-bottom: 2rem;
+  max-width: 90%;
+
   @media only screen and (min-width: 1024px) {
     max-width: 60%;
   }
+}
+
+/* contact form */
+
+.contact-form {
+  margin: 2rem auto 5rem auto;
+  max-width: 90%;
+  font-family: $poppins;
+  font-weight: 600;
+
+  @media only screen and (min-width: 1024px) {
+    max-width: 40%;
+  }
+}
+
+.form-input {
+  padding: 0.3rem;
+  background-color: #dcdcdc;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 1px dashed #444;
+}
+
+.form-buttons {
+  margin-top: 0.5rem;
+  font-family: $poppins;
+}
+
+.form-btn {
+  margin: 1rem 0.5rem 0 0;
+  padding: 0.2rem 0.5rem;
+  font-weight: 600;
+  border: hidden;
+  border-radius: 4px;
+  opacity: 100%;
+  transition: opacity 500ms ease 100ms;
+}
+
+.form-btn:hover {
+  opacity: 60%;
+}
+
+.btn-up {
+  color: #fff;
+  background-color: $red-color;
+}
+
+.btn-in {
+  color: #444;
+  background-color: #fff;
 }
 
 /* bottom nav bar */

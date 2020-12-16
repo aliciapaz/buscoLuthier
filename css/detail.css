@@ -500,6 +500,56 @@ ul {
   }
 }
 
+/* contact form */
+.contact-form {
+  margin: 2rem auto 5rem auto;
+  max-width: 90%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1024px) {
+  .contact-form {
+    max-width: 40%;
+  }
+}
+
+.form-input {
+  padding: 0.3rem;
+  background-color: #dcdcdc;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 1px dashed #444;
+}
+
+.form-buttons {
+  margin-top: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-btn {
+  margin: 1rem 0.5rem 0 0;
+  padding: 0.2rem 0.5rem;
+  font-weight: 600;
+  border: hidden;
+  border-radius: 4px;
+  opacity: 100%;
+  transition: opacity 500ms ease 100ms;
+}
+
+.form-btn:hover {
+  opacity: 60%;
+}
+
+.btn-up {
+  color: #fff;
+  background-color: #d4574a;
+}
+
+.btn-in {
+  color: #444;
+  background-color: #fff;
+}
+
 /* bottom nav bar */
 .bottom-wrapper {
   background-color: #000;

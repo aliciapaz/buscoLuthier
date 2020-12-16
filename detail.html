@@ -16,7 +16,7 @@
         <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
           <li class="nav-item d-flex mx-3">
             <i class="nav-link fas fa-search"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">Luthiers</a>
+            <a class="nav-link d-none d-lg-block px-2" href="results.html">Luthiers</a>
           </li>
           <li class="nav-item d-flex mx-3">
             <i class="nav-link fas fa-user"></i>
@@ -137,10 +137,81 @@
 
     <!--Map directions -->
 
-    <h1 class="directions-title"><i class="far fa-compass"></i> Map directions</h1>
+    <h1 class="directions-title">
+      <i class="far fa-compass"></i> Map directions
+    </h1>
     <div class="container-fluid directions-map">
-        <img class="img-fluid" src="./img/map.png" alt="Map">
+      <img class="img-fluid" src="./img/map.png" alt="Map" />
     </div>
+
+    <!-- Contact form -->
+
+    <h1 class="directions-title py-3">
+      <i class="far fa-calendar-check"></i> Schedule an appointment
+    </h1>
+    <form class="contact-form d-flex flex-column" action="#">
+      <label class="form-label text-uppercase" for="name">First name:</label>
+      <input
+        id="name"
+        class="form-input"
+        type="text"
+        maxlength="30"
+        placeholder="First name"
+        required
+      />
+      <label class="form-label text-uppercase pt-1" for="lastName">Last name:</label>
+      <input
+        id="lastName"
+        class="form-input"
+        type="text"
+        maxlength="30"
+        placeholder="Last name"
+        required
+      />
+      <label class="form-label text-uppercase pt-1" for="mail">Email: </label>
+      <input
+        id="mail"
+        class="form-input"
+        type="email"
+        maxlength="30"
+        placeholder="Email"
+        required
+      />
+      <label class="form-label text-uppercase pt-1" for="username">Username: </label>
+      <input
+        id="username"
+        class="form-input"
+        type="text"
+        maxlength="20"
+        placeholder="Username"
+        required
+      />
+      <label class="form-label text-uppercase pt-1" for="pwd">Password: </label>
+      <input
+        id="pwd"
+        class="form-input"
+        type="password"
+        minlength="8"
+        maxlength="20"
+        placeholder="Password"
+        required
+      />
+      <label class="form-label text-uppercase pt-1" for="confPwd">Confirm password: </label>
+      <input
+        id="confPwd"
+        class="form-input"
+        type="password"
+        minlength="8"
+        maxlength="20"
+        placeholder="Confirm password"
+        required
+      />
+      <div class="form-buttons d-flex">
+        <input class="form-btn btn-up" type="button" value="Sign up">
+        <input class="form-btn btn-in" type="button" value="Sign in">
+      </div>
+    </form>
+
     <!-- Footer -->
 
     <div class="bottom-wrapper">
@@ -200,7 +271,7 @@
                 name="email"
                 class="input-email text-fields rounded border-0 my-1 mx-1 px-2 text-center text-lg-start"
                 required
-                maxlength="20"
+                maxlength="30"
                 placeholder="Enter an email"
               />
               <label for="submit"></label>
