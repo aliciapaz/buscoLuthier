@@ -434,7 +434,7 @@ ul {
 
 /* main search */
 .wrapper-img {
-  background-image: url(/img/violin-bkg.jpg);
+  background-image: url(../img/violin-bkg.jpg);
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
