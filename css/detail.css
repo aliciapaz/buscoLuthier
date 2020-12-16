@@ -463,7 +463,7 @@ ul {
   padding: 2rem;
 }
 
-.luthier-info-title {
+.luthier-info-title, .directions-title {
   color: #d4574a;
   font-weight: 600;
 }
@@ -482,6 +482,22 @@ ul {
 
 .luthier-attribute {
   color: #0d6efd;
+}
+
+/* map directions */
+.directions-title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.directions-map {
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+@media only screen and (min-width: 1024px) {
+  .directions-map {
+    max-width: 60%;
+  }
 }
 
 /* bottom nav bar */
