@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Busco Luthier</title>
+    <link rel="stylesheet" href="./css/results.css" />
+    <title>Search results</title>
   </head>
   <body>
-    <!-- Navigation bar -->
+    <!-- Top navbar bar -->
     <nav class="navbar navbar-dark bg-dark sticky-top">
       <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
         <a class="navbar-brand mx-auto ms-md-2" href="index.html"
@@ -16,7 +16,7 @@
         <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
           <li class="nav-item d-flex mx-3">
             <i class="nav-link fas fa-search"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="results.html">Luthiers</a>
+            <a class="nav-link d-none d-lg-block px-2" href="#">Luthiers</a>
           </li>
           <li class="nav-item d-flex mx-3">
             <i class="nav-link fas fa-user"></i>
@@ -34,138 +34,103 @@
       </div>
     </nav>
 
-    <!-- Main search -->
-    <div class="container-fluid wrapper-img">
-      <h3 class="sl-title text-uppercase text-center">
-        busco luthier....your gateway to luthiers in Santiago.
-      </h3>
-      <div class="search-form d-flex flex-column rounded p-3 mx-auto">
-        <h5 class="search-title text-uppercase fw-bold">Search by key word:</h5>
-        <form class="d-flex flex-column flex-md-row">
-          <input type="text" class="form-control my-1 mx-md-1" id="search" />
-          <a 
-            href="results.html"
-            class="btn btn-dark text-reset text-uppercase my-1 fw-bold"
+    <!-- Search results -->
+    <div class="search-wrapper container-fluid">
+      <div class="search-filters row py-5 mx-auto d-flex align-items-end">
+        <div class="col-12 col-md input-group mb-3 mb-md-0 d-flex flex-column">
+          <label
+            class="filter-label input-group-text border-0"
+            for="inputGroupSelect01"
+            >Commune:</label
           >
-            Search
-        </a>
-        </form>
-      </div>
-      <div class="text-center">
-        <button type="button" class="btn btn-light mt-3 mt-md-5">
-          How it works
-        </button>
-      </div>
-    </div>
-
-    <!-- 4 simple steps -->
-
-    <div
-      class="steps-container container-fluid d-none d-md-block text-center my-2 py-5"
-    >
-      <div class="steps-title mx-auto mb-5 text-uppercase fw-bold">
-        busco luthier works in four simple steps.
-      </div>
-      <div class="row">
-        <div class="col-md-10 col-lg-4 mx-auto my-3">
-          <i class="fas fa-atlas fs-2 mb-3"></i>
-          <h3 class="text-uppercase fw-bold">1. Search:</h3>
-          <p>
-            It's simple. On luthier search homepage, enter the name of a luthier
-            you are looking for, an intrument or a commune and click on search.
-            Alternatively, click on the search icon on the top menu to view the
-            list of all luthiers available.
-          </p>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">Santiago</option>
+            <option value="2">Providencia</option>
+            <option value="3">Ñuñoa</option>
+          </select>
         </div>
-        <div class="col-md-10 col-lg-4 mx-auto my-3">
-          <i class="fas fa-map-marked-alt fs-2 mb-3"></i>
-          <h3 class="text-uppercase fw-bold">2. Locate:</h3>
-          <p>
-            Get to see where the luthier's workshop is located by clicking on
-            the luthier's profile. You can get the directions from anywhere in
-            the city.
-          </p>
+        <div class="col-12 col-md input-group mb-3 mb-md-0 d-flex flex-column">
+          <label
+            class="filter-label input-group-text border-0"
+            for="inputGroupSelect02"
+            >Family of instruments:</label
+          >
+          <select class="form-select" id="inputGroupSelect02">
+            <option selected>Choose...</option>
+            <option value="strings">Strings</option>
+            <option value="guitars">Guitars</option>
+            <option value="latinamerican strings">Latinamerican strings</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="woodwinds">Woodwinds</option>
+            <option value="brass">Brass</option>
+          </select>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-10 col-lg-4 mx-auto my-3">
-          <i class="fas fa-envelope-open-text fs-2 mb-3"></i>
-          <h3 class="text-uppercase fw-bold">3. Contact:</h3>
-          <p>Send a message to the luthier to schedule an appointment.</p>
+        <div class="col-12 col-md input-group mb-3 mb-md-0 d-flex flex-column">
+          <label
+            class="filter-label input-group-text border-0"
+            for="inputGroupSelect03"
+            >Instrument:</label
+          >
+          <select class="form-select width" id="inputGroupSelect03">
+            <option selected>Choose...</option>
+            <option value="violin">Violin</option>
+            <option value="viola">Viola</option>
+            <option value="cello">Cello</option>
+            <option value="double bass">Double Bass</option>
+            <option value="guitar">Guitar</option>
+            <option value="ukelele">Ukelele</option>
+            <option value="charango">Charango</option>
+            <option value="piano">Piano</option>
+            <option value="flute">Flute</option>
+            <option value="clarinet">Clarinet</option>
+            <option value="oboe">Oboe</option>
+            <option value="bugle">Bugle</option>
+            <option value="cornet">Cornet</option>
+            <option value="trumpet">Trumpet</option>
+            <option value="trombone">Trombone</option>
+            <option value="saxophone">Saxophone</option>
+          </select>
         </div>
-        <div class="col-md-10 col-lg-4 mx-auto my-3">
-          <i class="fas fa-music fs-2 mb-3"></i>
-          <h3 class="text-uppercase fw-bold">4. Enjoy:</h3>
-          <p>
-            Once your instrument is fixed, you can now enjoy it! Check out our
-            blog to see what we recommend when looking for a luthier, how to
-            take care of your musical instruments and other cool stuff.
-          </p>
+        <div class="col-12 col-xl mt-md-3">
+            <button type="submit" class="btn-results search-btn">Search</button>
+            <button type="button" class="btn-results clear-btn"><i class="fas fa-eraser"></i> Clear Filter</button>
         </div>
       </div>
     </div>
-
-    <!-- bottom section -->
-
-    <div class="bottom-section d-none d-md-block">
-      <div
-        class="item-find info-item d-flex align-items-center justify-content-between py-3"
-      >
-        <div class="info mx-5 px-2">
-          <h5 class="fw-bold">Over 100 luthiers registered with us</h5>
-          <p>Find a luthier by using our filtered search engine</p>
-          <a href="results.html" class="text-decoration-none bottom-btn btn-find border-0 rounded">
-            Find a luthier
-          </a>
+    <div class="search-results container-fluid">
+      <h1 class="results-title text-center fw-bold py-5">Search results found 3 luthier(s):</h1>
+    </div>
+    <div class="results-wrapper container-fluid">
+      <div class="d-flex flex-column flex-md-row justify-content-center mb-5">
+        <div class="py-2 m-1 card" style="width: 18rem;">
+          <img src="./img/card-1.jpg" class="luthier-img" alt="Antonio Zurita">
+          <div class="card-body">
+            <h5 class="card-title">Antonio Zurita</h5>
+            <p class="card-text py-3">With more than 15 years of experience, Zurita is an expert in guitars and latinamerican strings.  </p>
+            <a href="#" class="text-decoration-none more-btn search-btn">Learn more</a>
+          </div>
         </div>
-        <img
-          class="rounded-circle mx-5"
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsearchengineland.com%2Ffigz%2Fwp-content%2Fseloads%2F2014%2F08%2Fmaps-local-search1-ss-1920.jpg&f=1&nofb=1"
-          alt="map"
-          width="200"
-          height="200"
-        />
-      </div>
-      <div
-        class="item-need info-item d-flex align-items-center justify-content-between py-3"
-      >
-        <div class="info mx-5 px-2">
-          <h5 class="fw-bold">
-            No need to cross the entire city to find a luthier!
-          </h5>
-          <p>Just press on the Search button and you're all set.</p>
-          <a href="results.html" class="text-decoration-none bottom-btn btn-near border-0 rounded">
-            Find a luthier near you
-          </a>
+        <div class="py-2 m-1 card" style="width: 18rem;">
+          <img src="./img/card-2.jpg" class="luthier-img" alt="Antonio Zurita">
+          <div class="card-body">
+            <h5 class="card-title">Pedro Rodríguez</h5>
+            <p class="card-text py-3">Born in Angol, Pedro has mastery building and reparing all kinds of string instruments.</p>
+            <a href="#" class="text-decoration-none more-btn search-btn">Learn more</a>
+          </div>
         </div>
-        <img
-          class="rounded-circle mx-5"
-          src="https://www.elperiscopio.cl/wp-content/uploads/2019/12/No-hay-transporte-p%C3%BAblico.jpg"
-          alt="subway"
-          width="200"
-          height="200"
-        />
-      </div>
-      <div
-        class="item-anytime info-item d-flex align-items-center justify-content-between py-3"
-      >
-        <div class="info mx-5 px-2">
-          <h5 class="fw-bold">Anytime, anywhere, any way!</h5>
-          <p>
-            Very convenient platforms that cut accross any device, including our
-            mobile and tablet ready web app.
-          </p>
+        <div class="py-2 m-1 card" style="width: 18rem;">
+          <img src="./img/card-3.jpg" class="luthier-img" alt="Antonio Zurita">
+          <div class="card-body">
+            <h5 class="card-title">Claudio Núñez</h5>
+            <p class="card-text py-3">Formed in Argentina, Claudio is well-known because of his creative designs and fine terminations.  </p>
+            <a href="#" class="text-decoration-none more-btn search-btn">Learn more</a>
+          </div>
         </div>
-        <img
-          class="px-3 mx-5"
-          src="./img/mobile-half.png"
-          alt="mobile web app"
-          height="200"
-        />
       </div>
     </div>
 
-    <!-- footer -->
+    <!-- Footer -->
 
     <div class="bottom-wrapper">
       <nav class="bottom-navbar d-none d-md-block mb-5 position-relative">
@@ -201,7 +166,9 @@
             </li>
           </ul>
           <div class="center-icon position-absolute">
-            <a class="link-light" href="index.html"><i class="fas fa-guitar fs-4"></i></a>
+            <a class="link-light" href="index.html"
+              ><i class="fas fa-guitar fs-4"></i
+            ></a>
           </div>
         </div>
       </nav>
@@ -265,12 +232,12 @@
         </div>
       </div>
     </div>
-    <footer class="footer d-flex flex-column flex-md-row justify-content-between">
+    <footer
+      class="footer d-flex flex-column flex-md-row justify-content-between"
+    >
       <ul class="social-links d-flex mx-auto mx-md-1">
         <li>
-          <a href="#" class="link-light"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+          <a href="#" class="link-light"><i class="fab fa-facebook-f"></i></a>
         </li>
         <li>
           <a href="#" class="link-light"><i class="px-2 fab fa-twitter"></i></a>
@@ -285,10 +252,13 @@
         </li>
       </ul>
       <div class="mx-auto mx-md-1">
-        <span class="flex legal-span"><i class="fab fa-creative-commons"></i> 2020 Busco Luthier.</span>
+        <span class="flex legal-span"
+          ><i class="fab fa-creative-commons"></i> 2020 Busco Luthier.</span
+        >
         <span class="flex legal-span">Made with &lt;3 in Santiago.</span>
       </div>
     </footer>
+
     <script
       src="https://kit.fontawesome.com/bffcdc15fc.js"
       crossorigin="anonymous"

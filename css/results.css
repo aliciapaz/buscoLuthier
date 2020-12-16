@@ -432,76 +432,65 @@ ul {
   font-weight: 600;
 }
 
-/* main search */
-.wrapper-img {
-  background-image: url(/img/violin-bkg.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  width: 100%;
-  height: 38rem;
+/* search filters */
+.search-wrapper {
+  background-color: #eee;
 }
 
-.wrapper-img .sl-title {
-  color: #fff;
-  font-weight: 900;
-  padding-top: 10rem;
+.search-filters {
+  max-width: 85%;
 }
 
-.wrapper-img .search-form {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #fff;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper-img .search-form {
-    width: 60%;
-  }
-}
-
-.wrapper-img .search-title {
-  color: #6c757d;
-  font-size: 1rem;
-}
-
-/* 4 simple steps */
-.steps-container {
+.search-filters .filter-label {
+  background-color: #eee;
+  padding: 0;
+  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-}
-
-.steps-title {
-  color: #d4574a;
-}
-
-/* bottom section */
-.bottom-section {
-  font-family: "Poppins", sans-serif;
-  color: #fff;
   font-weight: 600;
 }
 
-.item-find {
-  background-color: #e17e65;
+.search-filters .form-select {
+  width: 100% !important;
 }
 
-.bottom-btn {
-  padding: 0.5rem;
-  background-color: #fafdff;
-  font-weight: 900;
+.btn-results, .more-btn {
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  opacity: 100%;
+  transition: opacity 0.5s ease;
 }
 
-.btn-find {
-  color: #e17e65;
+.btn-results:hover, .more-btn:hover {
+  opacity: 50%;
 }
 
-.btn-near {
-  color: #98a4a5;
+.search-btn {
+  border: 1px solid #3b72a9;
+  background-color: #457db4;
 }
 
-.item-need {
-  background-color: #98a4a5;
+.clear-btn {
+  border: 1px solid #e5a955;
+  background-color: #e5ac5b;
 }
 
-.item-anytime {
-  background-color: #509bd7;
+/* search results */
+.results-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.luthier-img {
+  margin: 0 auto;
+  width: 100%;
+  height: 15rem;
+}
+
+.more-btn {
+  position: absolute;
+  bottom: 0.5rem;
 }
 
 /* bottom nav bar */
@@ -10614,4 +10603,4 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=results.css.map */
