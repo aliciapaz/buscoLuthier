@@ -8,34 +8,39 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-dark bg-dark sticky-top">
-      <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
-        <a class="navbar-brand mx-auto ms-md-2" href="index.html"
-          >busco<i class="fas fa-guitar"></i>luthier</a
-        >
-        <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
-          <li class="nav-item d-flex mx-3">
-            <i class="nav-link fas fa-search"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="results.html">Luthiers</a>
-          </li>
-          <li class="nav-item d-flex mx-3">
-            <i class="nav-link fas fa-user"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">About</a>
-          </li>
-          <li class="nav-item d-flex mx-3">
-            <i class="nav-link fas fa-rss"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">Blog</a>
-          </li>
-          <li class="nav-item d-flex mx-3">
-            <i class="nav-link fas fa-sliders-h"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">More...</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
+          <a class="navbar-brand mx-auto ms-md-2" href="index.html"
+            >busco<i class="fas fa-guitar"></i>luthier</a
+          >
+          <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-search"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="results.html"
+                >Luthiers</a
+              >
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-user"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">About</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-rss"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">Blog</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-sliders-h"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">More...</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- Main search -->
-    <div class="container-fluid wrapper-img">
+    <main>
+    <section class="container-fluid wrapper-img">
       <h3 class="sl-title text-uppercase text-center">
         busco luthier....your gateway to luthiers in Santiago.
       </h3>
@@ -43,12 +48,12 @@
         <h5 class="search-title text-uppercase fw-bold">Search by key word:</h5>
         <form class="d-flex flex-column flex-md-row">
           <input type="text" class="form-control my-1 mx-md-1" id="search" />
-          <a 
+          <a
             href="results.html"
             class="btn btn-dark text-reset text-uppercase my-1 fw-bold"
           >
             Search
-        </a>
+          </a>
         </form>
       </div>
       <div class="text-center">
@@ -56,11 +61,11 @@
           How it works
         </button>
       </div>
-    </div>
+    </section>
 
     <!-- 4 simple steps -->
 
-    <div
+    <section
       class="steps-container container-fluid d-none d-md-block text-center my-2 py-5"
     >
       <div class="steps-title mx-auto mb-5 text-uppercase fw-bold">
@@ -103,7 +108,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- bottom section -->
 
@@ -112,9 +117,12 @@
         class="item-find info-item d-flex align-items-center justify-content-between py-3"
       >
         <div class="info mx-5 px-2">
-          <h5 class="fw-bold">Over 100 luthiers registered with us</h5>
+          <h1 class="fw-bold">Over 100 luthiers registered with us</h1>
           <p>Find a luthier by using our filtered search engine</p>
-          <a href="results.html" class="text-decoration-none bottom-btn btn-find border-0 rounded">
+          <a
+            href="results.html"
+            class="text-decoration-none bottom-btn btn-find border-0 rounded"
+          >
             Find a luthier
           </a>
         </div>
@@ -134,7 +142,10 @@
             No need to cross the entire city to find a luthier!
           </h5>
           <p>Just press on the Search button and you're all set.</p>
-          <a href="results.html" class="text-decoration-none bottom-btn btn-near border-0 rounded">
+          <a
+            href="results.html"
+            class="text-decoration-none bottom-btn btn-near border-0 rounded"
+          >
             Find a luthier near you
           </a>
         </div>
@@ -165,6 +176,8 @@
       </div>
     </div>
 
+  </main>
+
     <!-- footer -->
 
     <div class="bottom-wrapper">
@@ -180,7 +193,7 @@
               <a href="#" class="link-light text-decoration-none">SEARCH</a>
             </li>
             <li class="bottom-link">
-              <a href="#" class="link-light text-decoration-none">ABOUT US</a>
+              <a href="#" class="link-light text-decoration-none text-nowrap">ABOUT US</a>
             </li>
             <li class="bottom-link">
               <a href="#" class="link-light text-decoration-none">ADVERTISE</a>
@@ -201,7 +214,9 @@
             </li>
           </ul>
           <div class="center-icon position-absolute">
-            <a class="link-light" href="index.html"><i class="fas fa-guitar fs-4"></i></a>
+            <a class="link-light" href="index.html"
+              ><i class="fas fa-guitar fs-4"></i
+            ></a>
           </div>
         </div>
       </nav>
@@ -265,12 +280,12 @@
         </div>
       </div>
     </div>
-    <footer class="footer d-flex flex-column flex-md-row justify-content-between">
+    <footer
+      class="footer d-flex flex-column flex-md-row justify-content-between"
+    >
       <ul class="social-links d-flex mx-auto mx-md-1">
         <li>
-          <a href="#" class="link-light"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+          <a href="#" class="link-light"><i class="fab fa-facebook-f"></i></a>
         </li>
         <li>
           <a href="#" class="link-light"><i class="px-2 fab fa-twitter"></i></a>
@@ -285,7 +300,9 @@
         </li>
       </ul>
       <div class="mx-auto mx-md-1">
-        <span class="flex legal-span"><i class="fab fa-creative-commons"></i> 2020 Busco Luthier.</span>
+        <span class="flex legal-span"
+          ><i class="fab fa-creative-commons"></i> 2020 Busco Luthier.</span
+        >
         <span class="flex legal-span">Made with &lt;3 in Santiago.</span>
       </div>
     </footer>

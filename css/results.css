@@ -449,8 +449,10 @@ ul {
   font-weight: 600;
 }
 
-.search-filters .form-select {
-  width: 100% !important;
+.search-filters .form-option {
+  background-color: #fff;
+  border: hidden;
+  padding: 0.5rem;
 }
 
 .btn-results, .more-btn {

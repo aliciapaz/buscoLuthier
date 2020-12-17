@@ -8,33 +8,36 @@
   </head>
   <body>
     <!-- Top navbar bar -->
-    <nav class="navbar navbar-dark bg-dark sticky-top">
-      <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
-        <a class="navbar-brand mx-auto ms-md-2" href="index.html"
-          >busco<i class="fas fa-guitar"></i>luthier</a
-        >
-        <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
-          <li class="nav-item d-flex mx-3">
-            <i class="nav-link fas fa-search"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">Luthiers</a>
-          </li>
-          <li class="nav-item d-flex mx-3">
-            <i class="nav-link fas fa-user"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">About</a>
-          </li>
-          <li class="nav-item d-flex mx-3">
-            <i class="nav-link fas fa-rss"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">Blog</a>
-          </li>
-          <li class="nav-item d-flex mx-3">
-            <i class="nav-link fas fa-sliders-h"></i>
-            <a class="nav-link d-none d-lg-block px-2" href="#">More...</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
+          <a class="navbar-brand mx-auto ms-md-2" href="index.html"
+            >busco<i class="fas fa-guitar"></i>luthier</a
+          >
+          <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-search"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">Luthiers</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-user"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">About</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-rss"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">Blog</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-sliders-h"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">More...</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- Search results -->
+    <main>
     <div class="search-wrapper container-fluid">
       <div class="search-filters row py-5 mx-auto d-flex align-items-end">
         <div class="col-12 col-md input-group mb-3 mb-md-0 d-flex flex-column">
@@ -43,7 +46,7 @@
             for="inputGroupSelect01"
             >Commune:</label
           >
-          <select class="form-select" id="inputGroupSelect01">
+          <select class="form-option" id="inputGroupSelect01">
             <option selected>Choose...</option>
             <option value="1">Santiago</option>
             <option value="2">Providencia</option>
@@ -56,7 +59,7 @@
             for="inputGroupSelect02"
             >Family of instruments:</label
           >
-          <select class="form-select" id="inputGroupSelect02">
+          <select class="form-option" id="inputGroupSelect02">
             <option selected>Choose...</option>
             <option value="strings">Strings</option>
             <option value="guitars">Guitars</option>
@@ -72,7 +75,7 @@
             for="inputGroupSelect03"
             >Instrument:</label
           >
-          <select class="form-select width" id="inputGroupSelect03">
+          <select class="form-option" id="inputGroupSelect03">
             <option selected>Choose...</option>
             <option value="violin">Violin</option>
             <option value="viola">Viola</option>
@@ -93,42 +96,80 @@
           </select>
         </div>
         <div class="col-12 col-xl mt-md-3">
-            <button type="submit" class="btn-results search-btn">Search</button>
-            <button type="button" class="btn-results clear-btn"><i class="fas fa-eraser"></i> Clear Filter</button>
+          <button type="submit" class="btn-results search-btn">Search</button>
+          <button type="button" class="btn-results clear-btn">
+            <i class="fas fa-eraser"></i> Clear Filter
+          </button>
         </div>
       </div>
     </div>
     <div class="search-results container-fluid">
-      <h1 class="results-title text-center fw-bold py-5">Search results found 3 luthier(s):</h1>
+      <h1 class="results-title text-center fw-bold py-5">
+        Search results found 3 luthier(s):
+      </h1>
     </div>
     <div class="results-wrapper container-fluid">
       <div class="d-flex flex-column flex-md-row justify-content-center mb-5">
-        <div class="py-2 m-1 card" style="width: 18rem;">
-          <img src="./img/card-1.jpg" class="luthier-img" alt="Antonio Zurita">
+        <article class="py-2 m-1 card" style="width: 18rem">
+          <img
+            src="./img/card-1.jpg"
+            class="luthier-img"
+            alt="Antonio Zurita"
+          />
           <div class="card-body">
             <h5 class="card-title">Antonio Zurita</h5>
-            <p class="card-text py-3">With more than 15 years of experience, Zurita is an expert in guitars and latinamerican strings.  </p>
-            <a href="detail.html" class="text-decoration-none more-btn search-btn">Learn more</a>
+            <p class="card-text py-3">
+              With more than 15 years of experience, Zurita is an expert in
+              guitars and latinamerican strings.
+            </p>
+            <a
+              href="detail.html"
+              class="text-decoration-none more-btn search-btn"
+              >Learn more</a
+            >
           </div>
-        </div>
-        <div class="py-2 m-1 card" style="width: 18rem;">
-          <img src="./img/card-2.jpg" class="luthier-img" alt="Antonio Zurita">
+        </article>
+        <article class="py-2 m-1 card" style="width: 18rem">
+          <img
+            src="./img/card-2.jpg"
+            class="luthier-img"
+            alt="Antonio Zurita"
+          />
           <div class="card-body">
             <h5 class="card-title">Pedro Rodríguez</h5>
-            <p class="card-text py-3">Born in Angol, Pedro has mastery building and reparing all kinds of string instruments.</p>
-            <a href="detail.html" class="text-decoration-none more-btn search-btn">Learn more</a>
+            <p class="card-text py-3">
+              Born in Angol, Pedro has mastery building and reparing all kinds
+              of string instruments.
+            </p>
+            <a
+              href="detail.html"
+              class="text-decoration-none more-btn search-btn"
+              >Learn more</a
+            >
           </div>
-        </div>
-        <div class="py-2 m-1 card" style="width: 18rem;">
-          <img src="./img/card-3.jpg" class="luthier-img" alt="Antonio Zurita">
+        </article>
+        <article class="py-2 m-1 card" style="width: 18rem">
+          <img
+            src="./img/card-3.jpg"
+            class="luthier-img"
+            alt="Antonio Zurita"
+          />
           <div class="card-body">
             <h5 class="card-title">Claudio Núñez</h5>
-            <p class="card-text py-3">Formed in Argentina, Claudio is well-known because of his creative designs and fine terminations.  </p>
-            <a href="detail.html" class="text-decoration-none more-btn search-btn">Learn more</a>
+            <p class="card-text py-3">
+              Formed in Argentina, Claudio is well-known because of his creative
+              designs and fine terminations.
+            </p>
+            <a
+              href="detail.html"
+              class="text-decoration-none more-btn search-btn"
+              >Learn more</a
+            >
           </div>
-        </div>
+        </article>
       </div>
     </div>
+  </main>
 
     <!-- Footer -->
 
@@ -145,7 +186,7 @@
               <a href="#" class="link-light text-decoration-none">SEARCH</a>
             </li>
             <li class="bottom-link">
-              <a href="#" class="link-light text-decoration-none">ABOUT US</a>
+              <a href="#" class="link-light text-decoration-none text-nowrap">ABOUT US</a>
             </li>
             <li class="bottom-link">
               <a href="#" class="link-light text-decoration-none">ADVERTISE</a>
