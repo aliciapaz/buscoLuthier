@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/results.css" />
+    <title>Search results</title>
+  </head>
+  <body>
+    <!-- Top navbar bar -->
+    <header>
+      <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
+          <a class="navbar-brand mx-auto ms-md-2" href="index.html"
+            >busco<i class="fas fa-guitar"></i>luthier</a
+          >
+          <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-search"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">Luthiers</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-user"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">About</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-rss"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">Blog</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-sliders-h"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">More...</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Search results -->
+    <main>
+    <div class="search-wrapper container-fluid">
+      <div class="search-filters row py-5 mx-auto d-flex align-items-end">
+        <div class="col-12 col-md input-group mb-3 mb-md-0 d-flex flex-column">
+          <label
+            class="filter-label input-group-text border-0"
+            for="inputGroupSelect01"
+            >Commune:</label
+          >
+          <select class="form-option" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">Santiago</option>
+            <option value="2">Providencia</option>
+            <option value="3">Ñuñoa</option>
+          </select>
+        </div>
+        <div class="col-12 col-md input-group mb-3 mb-md-0 d-flex flex-column">
+          <label
+            class="filter-label input-group-text border-0"
+            for="inputGroupSelect02"
+            >Family of instruments:</label
+          >
+          <select class="form-option" id="inputGroupSelect02">
+            <option selected>Choose...</option>
+            <option value="strings">Strings</option>
+            <option value="guitars">Guitars</option>
+            <option value="latinamerican strings">Latinamerican strings</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="woodwinds">Woodwinds</option>
+            <option value="brass">Brass</option>
+          </select>
+        </div>
+        <div class="col-12 col-md input-group mb-3 mb-md-0 d-flex flex-column">
+          <label
+            class="filter-label input-group-text border-0"
+            for="inputGroupSelect03"
+            >Instrument:</label
+          >
+          <select class="form-option" id="inputGroupSelect03">
+            <option selected>Choose...</option>
+            <option value="violin">Violin</option>
+            <option value="viola">Viola</option>
+            <option value="cello">Cello</option>
+            <option value="double bass">Double Bass</option>
+            <option value="guitar">Guitar</option>
+            <option value="ukelele">Ukelele</option>
+            <option value="charango">Charango</option>
+            <option value="piano">Piano</option>
+            <option value="flute">Flute</option>
+            <option value="clarinet">Clarinet</option>
+            <option value="oboe">Oboe</option>
+            <option value="bugle">Bugle</option>
+            <option value="cornet">Cornet</option>
+            <option value="trumpet">Trumpet</option>
+            <option value="trombone">Trombone</option>
+            <option value="saxophone">Saxophone</option>
+          </select>
+        </div>
+        <div class="col-12 col-xl mt-md-3">
+          <button type="submit" class="btn-results search-btn">Search</button>
+          <button type="button" class="btn-results clear-btn">
+            <i class="fas fa-eraser"></i> Clear Filter
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="search-results container-fluid">
+      <h1 class="results-title text-center fw-bold py-5">
+        Search results found 3 luthier(s):
+      </h1>
+    </div>
+    <div class="results-wrapper container-fluid">
+      <div class="d-flex flex-column flex-md-row justify-content-center mb-5">
+        <article class="py-2 m-1 card" style="width: 18rem">
+          <img
+            src="./img/card-1.jpg"
+            class="luthier-img"
+            alt="Antonio Zurita"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Antonio Zurita</h5>
+            <p class="card-text py-3">
+              With more than 15 years of experience, Zurita is an expert in
+              guitars and latinamerican strings.
+            </p>
+            <a
+              href="detail.html"
+              class="text-decoration-none more-btn search-btn"
+              >Learn more</a
+            >
+          </div>
+        </article>
+        <article class="py-2 m-1 card" style="width: 18rem">
+          <img
+            src="./img/card-2.jpg"
+            class="luthier-img"
+            alt="Antonio Zurita"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pedro Rodríguez</h5>
+            <p class="card-text py-3">
+              Born in Angol, Pedro has mastery building and reparing all kinds
+              of string instruments.
+            </p>
+            <a
+              href="detail.html"
+              class="text-decoration-none more-btn search-btn"
+              >Learn more</a
+            >
+          </div>
+        </article>
+        <article class="py-2 m-1 card" style="width: 18rem">
+          <img
+            src="./img/card-3.jpg"
+            class="luthier-img"
+            alt="Antonio Zurita"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Claudio Núñez</h5>
+            <p class="card-text py-3">
+              Formed in Argentina, Claudio is well-known because of his creative
+              designs and fine terminations.
+            </p>
+            <a
+              href="detail.html"
+              class="text-decoration-none more-btn search-btn"
+              >Learn more</a
+            >
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+    <!-- Footer -->
+
+    <div class="bottom-wrapper">
+      <nav class="bottom-navbar d-none d-md-block mb-5 position-relative">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-center"
+        >
+          <ul class="bottom-links d-flex pe-5">
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">HOME</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">SEARCH</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none text-nowrap">ABOUT US</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">ADVERTISE</a>
+            </li>
+          </ul>
+          <ul class="bottom-links d-flex ps-5">
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">FACEBOOK</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">TWITTER</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">BLOG</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">INSTAGRAM</a>
+            </li>
+          </ul>
+          <div class="center-icon position-absolute">
+            <a class="link-light" href="index.html"
+              ><i class="fas fa-guitar fs-4"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <div class="subscribe-container container-fluid mt-3">
+        <div class="row">
+          <div class="subscribe-form col-12 col-md-4 mb-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >SUBSCRIBE</a
+              >
+            </h5>
+            <div
+              class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
+            >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input-email text-fields rounded border-0 my-1 mx-1 px-2 text-center text-lg-start"
+                required
+                maxlength="20"
+                placeholder="Enter an email"
+              />
+              <label for="submit"></label>
+              <input
+                class="subscribe-btn border-0 rounded"
+                type="submit"
+                id="submit"
+                value="Subscribe"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >CONTACT</a
+              >
+            </h5>
+            <p class="text-center">
+              Have a question or suggestion?
+              <a href="#" class="subs-link text-decoration-none"
+                >buscoluthier@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >ABOUT</a
+              >
+            </h5>
+            <p class="text-center">
+              Busco luthier is an online platform that allows musicians from
+              Santiago, Chile to find luthiers nearby in the city, simply by
+              searching by commune, instrument or luthier name.
+              <a class="subs-link text-decoration-none" href="#"
+                >Learn more...</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="footer d-flex flex-column flex-md-row justify-content-between"
+    >
+      <ul class="social-links d-flex mx-auto mx-md-1">
+        <li>
+          <a href="#" class="link-light"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"><i class="px-2 fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"><i class="px-2 fas fa-rss"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"
+            ><i class="px-2 fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="mx-auto mx-md-1">
+        <span class="flex legal-span"
+          ><i class="fab fa-creative-commons"></i> 2020 Busco Luthier.</span
+        >
+        <span class="flex legal-span">Made with &lt;3 in Santiago.</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/bffcdc15fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Busco Luthier</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <header>
+      <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid d-flex flex-column flex-md-row flex-lg-row">
+          <a class="navbar-brand mx-auto ms-md-2" href="index.html"
+            >busco<i class="fas fa-guitar"></i>luthier</a
+          >
+          <ul class="navbar-nav d-flex flex-row mx-auto me-md-2 my-2">
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-search"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="results.html"
+                >Luthiers</a
+              >
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-user"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">About</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-rss"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">Blog</a>
+            </li>
+            <li class="nav-item d-flex mx-3">
+              <i class="nav-link fas fa-sliders-h"></i>
+              <a class="nav-link d-none d-lg-block px-2" href="#">More...</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main search -->
+    <main>
+    <section class="container-fluid wrapper-img">
+      <h3 class="sl-title text-uppercase text-center">
+        busco luthier....your gateway to luthiers in Santiago.
+      </h3>
+      <div class="search-form d-flex flex-column rounded p-3 mx-auto">
+        <h5 class="search-title text-uppercase fw-bold">Search by key word:</h5>
+        <form class="d-flex flex-column flex-md-row">
+          <input type="text" class="form-control my-1 mx-md-1" id="search" />
+          <a
+            href="results.html"
+            class="btn btn-dark text-reset text-uppercase my-1 fw-bold"
+          >
+            Search
+          </a>
+        </form>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn btn-light mt-3 mt-md-5">
+          How it works
+        </button>
+      </div>
+    </section>
+
+    <!-- 4 simple steps -->
+
+    <section
+      class="steps-container container-fluid d-none d-md-block text-center my-2 py-5"
+    >
+      <div class="steps-title mx-auto mb-5 text-uppercase fw-bold">
+        busco luthier works in four simple steps.
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-lg-4 mx-auto my-3">
+          <i class="fas fa-atlas fs-2 mb-3"></i>
+          <h3 class="text-uppercase fw-bold">1. Search:</h3>
+          <p>
+            It's simple. On luthier search homepage, enter the name of a luthier
+            you are looking for, an intrument or a commune and click on search.
+            Alternatively, click on the search icon on the top menu to view the
+            list of all luthiers available.
+          </p>
+        </div>
+        <div class="col-md-10 col-lg-4 mx-auto my-3">
+          <i class="fas fa-map-marked-alt fs-2 mb-3"></i>
+          <h3 class="text-uppercase fw-bold">2. Locate:</h3>
+          <p>
+            Get to see where the luthier's workshop is located by clicking on
+            the luthier's profile. You can get the directions from anywhere in
+            the city.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-lg-4 mx-auto my-3">
+          <i class="fas fa-envelope-open-text fs-2 mb-3"></i>
+          <h3 class="text-uppercase fw-bold">3. Contact:</h3>
+          <p>Send a message to the luthier to schedule an appointment.</p>
+        </div>
+        <div class="col-md-10 col-lg-4 mx-auto my-3">
+          <i class="fas fa-music fs-2 mb-3"></i>
+          <h3 class="text-uppercase fw-bold">4. Enjoy:</h3>
+          <p>
+            Once your instrument is fixed, you can now enjoy it! Check out our
+            blog to see what we recommend when looking for a luthier, how to
+            take care of your musical instruments and other cool stuff.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- bottom section -->
+
+    <div class="bottom-section d-none d-md-block">
+      <div
+        class="item-find info-item d-flex align-items-center justify-content-between py-3"
+      >
+        <div class="info mx-5 px-2">
+          <h1 class="fw-bold">Over 100 luthiers registered with us</h1>
+          <p>Find a luthier by using our filtered search engine</p>
+          <a
+            href="results.html"
+            class="text-decoration-none bottom-btn btn-find border-0 rounded"
+          >
+            Find a luthier
+          </a>
+        </div>
+        <img
+          class="rounded-circle mx-5"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsearchengineland.com%2Ffigz%2Fwp-content%2Fseloads%2F2014%2F08%2Fmaps-local-search1-ss-1920.jpg&f=1&nofb=1"
+          alt="map"
+          width="200"
+          height="200"
+        />
+      </div>
+      <div
+        class="item-need info-item d-flex align-items-center justify-content-between py-3"
+      >
+        <div class="info mx-5 px-2">
+          <h5 class="fw-bold">
+            No need to cross the entire city to find a luthier!
+          </h5>
+          <p>Just press on the Search button and you're all set.</p>
+          <a
+            href="results.html"
+            class="text-decoration-none bottom-btn btn-near border-0 rounded"
+          >
+            Find a luthier near you
+          </a>
+        </div>
+        <img
+          class="rounded-circle mx-5"
+          src="https://www.elperiscopio.cl/wp-content/uploads/2019/12/No-hay-transporte-p%C3%BAblico.jpg"
+          alt="subway"
+          width="200"
+          height="200"
+        />
+      </div>
+      <div
+        class="item-anytime info-item d-flex align-items-center justify-content-between py-3"
+      >
+        <div class="info mx-5 px-2">
+          <h5 class="fw-bold">Anytime, anywhere, any way!</h5>
+          <p>
+            Very convenient platforms that cut accross any device, including our
+            mobile and tablet ready web app.
+          </p>
+        </div>
+        <img
+          class="px-3 mx-5"
+          src="./img/mobile-half.png"
+          alt="mobile web app"
+          height="200"
+        />
+      </div>
+    </div>
+
+  </main>
+
+    <!-- footer -->
+
+    <div class="bottom-wrapper">
+      <nav class="bottom-navbar d-none d-md-block mb-5 position-relative">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-center"
+        >
+          <ul class="bottom-links d-flex pe-5">
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">HOME</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">SEARCH</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none text-nowrap">ABOUT US</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">ADVERTISE</a>
+            </li>
+          </ul>
+          <ul class="bottom-links d-flex ps-5">
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">FACEBOOK</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">TWITTER</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">BLOG</a>
+            </li>
+            <li class="bottom-link">
+              <a href="#" class="link-light text-decoration-none">INSTAGRAM</a>
+            </li>
+          </ul>
+          <div class="center-icon position-absolute">
+            <a class="link-light" href="index.html"
+              ><i class="fas fa-guitar fs-4"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <div class="subscribe-container container-fluid mt-3">
+        <div class="row">
+          <div class="subscribe-form col-12 col-md-4 mb-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >SUBSCRIBE</a
+              >
+            </h5>
+            <div
+              class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
+            >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input-email text-fields rounded border-0 my-1 mx-1 px-2 text-center text-lg-start"
+                required
+                maxlength="20"
+                placeholder="Enter an email"
+              />
+              <label for="submit"></label>
+              <input
+                class="subscribe-btn border-0 rounded"
+                type="submit"
+                id="submit"
+                value="Subscribe"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >CONTACT</a
+              >
+            </h5>
+            <p class="text-center">
+              Have a question or suggestion?
+              <a href="#" class="subs-link text-decoration-none"
+                >buscoluthier@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+            <h5 class="text-center">
+              <a href="#" class="link-light text-decoration-none fw-bold"
+                >ABOUT</a
+              >
+            </h5>
+            <p class="text-center">
+              Busco luthier is an online platform that allows musicians from
+              Santiago, Chile to find luthiers nearby in the city, simply by
+              searching by commune, instrument or luthier name.
+              <a class="subs-link text-decoration-none" href="#"
+                >Learn more...</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="footer d-flex flex-column flex-md-row justify-content-between"
+    >
+      <ul class="social-links d-flex mx-auto mx-md-1">
+        <li>
+          <a href="#" class="link-light"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"><i class="px-2 fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"><i class="px-2 fas fa-rss"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link-light"
+            ><i class="px-2 fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="mx-auto mx-md-1">
+        <span class="flex legal-span"
+          ><i class="fab fa-creative-commons"></i> 2020 Busco Luthier.</span
+        >
+        <span class="flex legal-span">Made with &lt;3 in Santiago.</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/bffcdc15fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
