@@ -22,7 +22,7 @@ This website is based on an online directory of schools, but with the personalis
 
 ## Live Demo
 
-[Live Demo Link](https://aliciapaz.github.io/capstone-1/.)
+[Live Demo Link](https://aliciapaz.github.io/buscoLuthier/)
 
 ## Usage
 
