@@ -2,7 +2,7 @@
 
 ## Busco Luthier: a directory of luthiers in Santiago, Chile
 
-This website is based on an online directory of schools, but with the personalised content of luthiers (a person who builds and repairs musical instruments). Using industry tools, I build a site that is composed of 3 pages: a homepage, a search results page and the luthier information page. The platform is fully responsive to all devices: mobile phones, tablets and large screens.
+This website is based on an online directory of schools, but with the personalised content of luthiers (a person who builds and repairs musical instruments). Using industry-standard tools, I built a site that is composed of 3 pages: a homepage, a search results page and the luthier information page. The platform is fully responsive to all devices: mobile phones, tablets and large screens.
 
 ### Desktop version
 
